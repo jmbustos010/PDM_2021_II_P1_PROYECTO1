@@ -35,15 +35,15 @@ class RegistroLibroActivity: AppCompatActivity() {
         val dato: Libro = Libro()
 
         if(txtNumeroDeLibro.text.isEmpty()){
-            val toast = Toast.makeText(applicationContext, "El Numero de libro no puede estar vacio", Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(applicationContext, "El Numero de libro esta vacio", Toast.LENGTH_LONG).show()
         }else if(txtNombreDeLibro.text.isEmpty()){
-            val toast = Toast.makeText(applicationContext, "Este Nombre de libro no puede estar vacio", Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(applicationContext, "Nombre de libro esta vacio", Toast.LENGTH_LONG).show()
         }else if (txtAutor.text.isEmpty()){
-            val toast = Toast.makeText(applicationContext, "Este Autor de libro está vacio", Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(applicationContext, "Autor de libro está vacio", Toast.LENGTH_LONG).show()
         }else if(txtEditorial.text.isEmpty()){
-            val toast = Toast.makeText(applicationContext, "Este Editorial de libro está vacio", Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(applicationContext, "Editorial de libro está vacio", Toast.LENGTH_LONG).show()
         }else if(txtFechaDePublicacion.text.isEmpty()){
-            val toast = Toast.makeText(applicationContext, "La fecha de publicacion de libro está vacio", Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(applicationContext, "Fecha de publicacion de libro está vacio", Toast.LENGTH_LONG).show()
         }else{
             dato.numeroDeLibro       = txtNumeroDeLibro.text.toString().toInt()
             dato.nombreDeLibro       = txtNombreDeLibro.text.toString()
